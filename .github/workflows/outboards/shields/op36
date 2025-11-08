@@ -1,0 +1,5 @@
+
+outboard_repository=ergohaven/ergohaven-zmk
+outboard_ref=main
+outboard_from=boards/shields/op36
+outboard_to=boards/shields/op36

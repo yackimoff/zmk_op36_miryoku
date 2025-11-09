@@ -1,5 +1,5 @@
 
 outboard_repository=ergohaven/ergohaven-zmk
-outboard_ref=master
+outboard_ref=main
 outboard_from=boards/arm/ergohaven
 outboard_to=boards/arm/ergohaven

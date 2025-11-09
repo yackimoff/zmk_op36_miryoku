@@ -304,6 +304,7 @@ jobs:
         timeout-minutes: 2
         continue-on-error: true
       - name: build
+        continue-on-error: true
         run: |
           if [ "$MIRYOKU_DEBUG" = 'MIRYOKU_DEBUG_TRUE' ]
           then
@@ -368,7 +369,7 @@ jobs:
           test "$MIRYOKU_DEBUG" = 'MIRYOKU_DEBUG_TRUE' && cp "${GITHUB_WORKSPACE}/zmk/app/build/zephyr/.config" "${{ steps.main.outputs.artifact_dir }}"
           echo "::endgroup::"
       - name: collect devicetree outputs
-        if: failure()
+        if: always()
         run: |
           art="${{ steps.main.outputs.artifact_dir }}"
           mkdir -p "$art"

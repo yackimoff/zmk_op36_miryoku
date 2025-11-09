@@ -14,7 +14,7 @@ jobs:
       layers: '["default"]'
       mapping: '["default"]'
       custom_config: '["default"]'
-      kconfig: '["CONFIG_DEVICE_MAX_NAME_LEN=96"]'
+      kconfig: '["default"]'
       branches: '["default"]'      # leave unless you need a custom ZMK branch merge
       modules: '["default"]'
 

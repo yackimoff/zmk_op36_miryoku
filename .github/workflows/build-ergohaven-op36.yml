@@ -1,0 +1,20 @@
+name: Build Ergohaven OP36 (both halves)
+on:
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["ergohaven"]'
+      shield: '["op36_left","op36_right"]'
+      alphas: '["QWERTY"]'
+      nav: '["vi"]'
+      layers: '["default"]'
+      mapping: '["default"]'
+      custom_config: '["default"]'
+      kconfig: '["default"]'
+      branches: '["default"]'      # leave unless you need a custom ZMK branch merge
+      modules: '["default"]'
+

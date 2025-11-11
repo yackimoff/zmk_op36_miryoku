@@ -10,11 +10,11 @@ jobs:
       board: '["ergohaven"]'
       shield: '["op36_left","op36_right"]'
       alphas: '["QWERTY"]'
-      nav: '["vi"]'
+      nav: '["default"]'
       layers: '["default"]'
       mapping: '["default"]'
-      custom_config: '["default"]'
-      kconfig: '["default"]'
+      custom_config: '["#define MIRYOKU_CLIPBOARD_WIN\n#define MIRYOKU_EXTRA_COLEMAKDH\n#define MIRYOKU_TAP_QWERTY"]'
+      kconfig: '["CONFIG_ZMK_POINTING=y"]'
       branches: '["default"]'      # leave unless you need a custom ZMK branch merge
       modules: '["default"]'
 
